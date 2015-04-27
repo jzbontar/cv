@@ -1,9 +1,6 @@
-all: cv_en_intern2015.pdf cv_en.pdf cv_sl.pdf
+all: cv_en_job2015.pdf
 
 %.pdf: %.tex
-	pdflatex $<
-	bibtex $(<:%.tex=%)
-	pdflatex $<
 	pdflatex $<
 
 clean:
